@@ -6,16 +6,16 @@
 .contenedor{
     margin: 0 auto;
     width: 90%;
-    border: 1px solid gray;
+    border: 5px solid black;
+    background-color: aquamarine;
 }
 
 div{
     display: inline-block;
     width: 380px;
-    height: 450px;
-    
+    height: auto;
    margin: 0 auto;
-   margin-left: 10px;
+   margin-left: 15px;
     margin-top: 20px;
     border-radius: 10px;
 box-shadow: 3px 3px 0px 0px blue;
