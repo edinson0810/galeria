@@ -31,4 +31,12 @@ box-shadow: 3px 3px 0px 0px blue;
     max-width: 300px;
     max-height: 300px;
     filter: drop-shadow(-20px 0px 3px white);
+    
+}
+
+
+
+.imagen:hover{
+    transform: scale(1.5);
+    filter: drop-shadow(10px 20px 2px yellow);
 }
