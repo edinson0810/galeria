@@ -1,42 +1,99 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.contenedor{
-    margin: 0 auto;
-    width: 90%;
-    border: 5px solid black;
-    background-color: aquamarine;
+/* body {
+  height: 300vh;
+} */
+
+:root {
+  --filter: drop-shadow(-20px 0px 3px green);
+  --border: 10px solid yellow;
+  --box-shadow: 0 0 50px yellow;
 }
 
-div{
-    display: inline-block;
-    width: 380px;
-    height: auto;
-   margin: 0 auto;
-   margin-left: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-box-shadow: 3px 3px 0px 0px blue;
-    background-color: gainsboro;
-   
+.contenedor {
+  margin: 0 auto;
+  width: 90%;
+  border: 5px solid black;
+  background-color: aquamarine;
 }
 
-
-
-.imagen{
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    max-height: 300px;
-    filter: drop-shadow(-20px 0px 3px white);
-    
+div {
+  display: inline-block;
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+  margin-left: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 0px gray;
+  background-color: black;
+  border: var(--border)
 }
 
+h1 {
+  color: gold;
+}
+
+p {
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.imagen {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 300px;
+  filter: drop-shadow(5px 5px 2px white);
 
 
-.imagen:hover{
-    transform: scale(1.5);
-    filter: drop-shadow(10px 20px 2px yellow);
+}
+
+.imagen1 {
+
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 300px;
+  filter: drop-shadow(5px 5px 2px white);
+
+}
+
+.imagen1:hover {
+  cursor: pointer;
+  transform: scale(5);
+  box-shadow: var(--box-shadow);
+  filter: var(--filter);
+
+
+}
+
+.uno {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
+
+.imagen:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: var(--box-shadow);
+  filter: var(--filter);
+
+}
+
+@media(max-width:700px) {
+  body {
+    background: salmon;
+  }
+}
+
+@media(max-width:500px) {
+  body {
+    background: yellow;
+  }
 }
